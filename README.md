@@ -89,7 +89,7 @@ python qkm_runner.py 5 /path/to/pipeline_artifacts.pkl /path/to/checkpoints/
 ## Cài đặt
 
 ```bash
-pip install qiskit qiskit-aer qiskit-machine-learning
+pip install qiskit==1.4.2 qiskit-aer==0.15.1 qiskit-machine-learning==0.7.2
 pip install numpy pandas scikit-learn pygam rpy2 pyreadr
 pip install tqdm plotly great_tables
 ```
@@ -97,7 +97,7 @@ pip install tqdm plotly great_tables
 > GPU (NVIDIA): cài thêm `qiskit-aer-gpu` thay cho `qiskit-aer`
 
 ```bash
-pip install qiskit-aer-gpu
+pip install qiskit-aer-gpu==0.7.2
 ```
 
 ---
