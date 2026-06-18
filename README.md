@@ -18,11 +18,11 @@ Dữ liệu ESM (Experience Sampling Method) ghi lại trải nghiệm hàng ng�
 
 ```
 Raw ESM data (S1 + S2 + S3)
-        ↓ 01. Loading & Merge      cleanM, reset TIDnum, gộp 3 study → dtAll (156 người)
-        ↓ 02. Processing           GAM feature extraction (6 features × 12 items = 72 chiều)
-                                   Imputation (MICE) + Z-score + PCA → pca_scores (156 × 27)
-        ↓ 03. Analysis             Classical KMeans vs Quantum KMeans, k=2..10
-        ↓ 04. Dims Comparison      Quantum KMeans theo dims = 2, 5, 10, 15, 20, 27
+        ↓ 01. Loading & Merge                             cleanM, reset TIDnum, gộp 3 study → dtAll (156 người)
+        ↓ 02. Processing                                  GAM feature extraction (6 features × 12 items = 72 chiều)
+                                                          Imputation (MICE) + Z-score + PCA → pca_scores (156 × 27)
+        ↓ 03. Classical KMeans vs Quantum KMeans          Classical KMeans vs Quantum KMeans, k=2..10
+        ↓ 04. Dims Comparison                             Quantum KMeans theo dims = 2, 5, 10, 15, 20, 27
 ```
 
 ### 6 đặc trưng động (dynamic features) trích từ mỗi chuỗi
@@ -159,6 +159,18 @@ Nếu bạn dùng code này, vui lòng cite:
   doi     = {10.17605/OSF.IO/J8DZV}
 }
 ```
+### Bài báo gốc (methodology)
+Kreienkamp, J., Agostini, M., Monden, R., Epstude, K., de Jonge, P., & Bringmann, L. F. (2024).
+A Gentle Introduction and Application of Feature-Based Clustering with Psychological Time Series.
+*Multivariate Behavioral Research*, 60(2), 362–392.
+https://doi.org/10.1080/00273171.2024.2432918
+
+### Tutorial & code gốc
+https://www.tsfeatureclustr.com/
+
+### Dataset
+Kreienkamp et al. (2023). OSF.
+https://doi.org/10.17605/OSF.IO/J8DZV
 
 **Dependencies:**
 - [Qiskit](https://github.com/Qiskit/qiskit) — Apache License 2.0
